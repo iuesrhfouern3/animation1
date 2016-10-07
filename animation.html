@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1> Animation</h1>
+  <p> So what I have decided to make my cartoon scene animation project thing on soccer,
+    again. So what the animation is going to be is that the ball will go into the goal.
+    Hopefully.</p>
+    <svg width="700" height="400">
+      <rect x="0" y="0" width="700" height="200" fill="blue">
+        <animate attributeName="fill" from="blue" to="crimson" dur="500s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="0" y="200" width="700" height="200" fill="green"/>
+      <circle cx="10" cy="10" r="50" fill="yellow">
+        <animate  attributeName="fill" from="yellow" to="red" dur="500s" repeatcount="indefinite"/>
+        <animate attributeName="cx" from="10" to="700" dur="500s" repeatCount="indefinite"/>
+        <animate attributeName="cy" from="10" to="50" dur="500s" repeatCount="indefinite"/>
+      </circle>
+      <polyline points="200 200 200 80 500 80 500 200" stroke="white" stroke-width="15" fill="blue">
+        <animate attributeName="fill" from="blue" to="crimson" dur="500s" repeatCount="indefinite"/>
+    </polyline>
+    <circle cx="350" cy="320" r="20" fill="grey">
+    <animate attributeName="cx" from="350" to="480" dur="1.5s" begin="mouseover"/>
+    <animate attributeName="cy" from="320" to="100" dur="1.5s" begin="mouseover"/>
+    <animate attributeName="r" from="20" to=9 dur="1.5s" begin="mouseover"/>
+  </circle>
+      <rect x="341" y="143" width="20" height="30" fill="yellow"/>
+      <circle cx="351" cy="135" r="10" fill="brown"/>
+      <line x1="343" y1="147" x2="325" y2="155" stroke="yellow" stroke-width="8">
+        <animate attributeName="y2" from="155" to="140" dur=".75" repeatCount="indefinite"/>
+      </line>
+      <line x1="360" y1="147" x2="380" y2="155" stroke="yellow" stroke-width="8">
+        <animate attributeName="y2" from="155" to="140" dur=".75s" repeatCount="indefinite"/>
+      </line>
+      <polyline points="340 200 343 172 358 172 363 200" stroke="black" stroke-width="8" fill="blue">
+        <animate attributeName="fill" from="blue" to="crimson" dur="500s" repeatCount="indefinite"/>
+      </polyline>
+    </svg>
+</body>
+</html>

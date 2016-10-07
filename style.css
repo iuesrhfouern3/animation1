@@ -1,0 +1,14 @@
+@import 'https://fonts.googleapis.com/css?family=Rock+Salt|Walter+Turncoat';
+
+h1{
+  font-family: 'Rock Salt', cursive;
+  color : crimson;
+}
+p{
+  font-family: 'Walter Turncoat', cursive;
+  color : blue;
+}
+
+svg{
+  background-color: black;
+}
